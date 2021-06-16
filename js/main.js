@@ -95,10 +95,15 @@ pbSetH1Color.addEventListener('click', function(){
   for(let i = 0; i < 3; i++){
     redBackgroundColour(h1s[i]);
   }
+  redColour(h1s[0]);
 })
 
 function redBackgroundColour(el){
   el.style.backgroundColor = 'red';
+}
+
+function redColour(el) {
+  el.style.color = 'red';
 }
 
 
