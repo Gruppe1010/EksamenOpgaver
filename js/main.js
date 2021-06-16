@@ -14,12 +14,12 @@ function out2(arguments) {
 out2(1, 211, 40, 5321);
 
 //p3
-out(4=="4");
-out(4>"12");
-out("4">"12");
+out(4=="4"); //true
+out(4>"12"); //false
+out("4">"12");//true
 
 //p4
-out(4==="4");
+out(4==="4") //false
 
 //p7
 const aa = 4 + "12";
@@ -34,3 +34,4 @@ out(cc);
 //p8
 const dd = true + 1 + Number("25");
 out(dd);
+
