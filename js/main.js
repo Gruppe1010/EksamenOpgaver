@@ -35,3 +35,10 @@ out(cc);
 const dd = true + 1 + Number("25");
 out(dd);
 
+//p10 TODO Måske skal denne laves til en metode
+function add(a, b) {
+  let sum;
+  sum = a + b;
+  return sum;
+}
+console.log("Sum =", add(1, 7));
