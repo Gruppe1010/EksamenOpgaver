@@ -36,9 +36,55 @@ const dd = true + 1 + Number("25");
 out(dd);
 
 //p10 TODO Måske skal denne laves til en metode
-function add(a, b) {
+let add = function add(a, b) {
   let sum;
   sum = a + b;
   return sum;
 }
 console.log("Sum =", add(1, 7));
+
+//p11
+let square = function square(number) {
+  return Math.sqrt(number);
+}
+
+function addAndSquare(add, a, b, square) {
+  return square(add(a, b));
+}
+
+console.log(addAndSquare(add, 4, 12, square));
+
+//p13
+const fruits = ["apple", "orange", "cherry", "strawberry"];
+fruits.forEach(myFunction);
+
+function myFunction(fruit) {
+  let demo = document.getElementById("demo");
+  let demoText = demo.innerText;
+  if(demoText === "") {
+    demo.innerText = fruit;
+  } else {
+    demo.innerText = demoText + ", " + fruit;
+  }
+}
+
+//p14
+const button = document.querySelector('.pbSetColor');
+const input = document.querySelector('.getColor');
+
+button.addEventListener('click', function() {
+  document.body.style.backgroundColor = input.value;
+  console.log(input.value);
+});
+
+/*
+const button = document.getElementsByClassName('pbSetColor');
+const input = document.getElementsByClassName('getColor');
+
+button[0].addEventListener('click', function() {
+  document.body.style.backgroundColor = input[0].value;
+  console.log(input[0].value);
+});
+*/
+
+//p15
