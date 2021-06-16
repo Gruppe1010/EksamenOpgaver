@@ -88,3 +88,38 @@ button[0].addEventListener('click', function() {
 */
 
 //p15
+const pbSetH1Color = document.querySelector('.pbSetH1Color');
+const h1s = document.getElementsByTagName('h1');
+
+pbSetH1Color.addEventListener('click', function(){
+  for(let i = 0; i < 3; i++){
+    redBackgroundColour(h1s[i]);
+  }
+})
+
+function redBackgroundColour(el){
+  el.style.backgroundColor = 'red';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
