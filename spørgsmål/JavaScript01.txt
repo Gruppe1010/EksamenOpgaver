@@ -1,0 +1,151 @@
+JavaScript01. Eriks exam like questions.
+
+---------------------------------------------
+P1. Write a function with the name out, that takes one parameter and writes that parameter to the console.
+
+function out(s) {
+  console.log(s);
+}
+out(2);
+
+---------------------------------------------
+P2. Write a function with the name out2, that takes any number of parameters and writes all of them to the console.
+
+function out2() {
+  console.log(arguments);
+}
+out2(1, 211, 40, 5321);
+
+---------------------------------------------
+P3. Call the out function with (4=="4")
+  what is written in the console
+
+Practice som other operators.
+
+out(4>"12");
+out("4">"12");
+
+"4" er større end "12" fordi 1 tallet i 12 kommer før 4 alfabetisk
+
+---------------------------------------------
+P4. Why is 4=="4" true
+  What operator could you use to change it to false.
+  Explain
+
+out(4==="4");
+
+---------------------------------------------
+P5. How many JavaScript data types can contain values ?
+
+---------------------------------------------
+P6. Which data types in JavaScript cannot contain values ?
+
+---------------------------------------------
+P7. const aa = 4 + "12";
+What does this print
+out(typeof aa); 
+
+const bb = true + "hej";
+out(bb);
+
+const cc = true + 4 + "hej";
+out(cc);
+
+Fordi true er 1
+
+Explain
+
+---------------------------------------------
+P8. true + 1 + "25";
+
+What do you need to put in front of "25" to get the above to return the number 27.
+
+---------------------------------------------
+P9. Forklar forskel på const, let og var.
+  Forklar især forskel på scope for let og var.
+
+---------------------------------------------
+P10. Skriv en add metode der tager 2 argumenter og returnerer summen af de 2 argumenter.
+
+---------------------------------------------
+P11. Skriv en addAndSquare function, der tager 4 argumenter.
+  Første er ovenstående add funktion, derefter 2 parametre til add, og til sidst en square funktion.
+  Og returnerer udtrykket square(add(a,b)).
+  
+  Hvis fex kaldes med (add,4,12,?)  så returnerer funktionen 4. (hvor ? er en funktion der tager kvadratroden).
+
+---------------------------------------------
+P12. Is it possible to pass a method as an argument to a method in Java ?
+
+---------------------------------------------
+P13. I din html fil har du følgende tag.
+<p id="demo"></p>
+
+I din JavaScript har du følgende array.
+
+const fruits = ["apple", "orange", "cherry", "strawberry"];
+fruits.forEach(myFunction);
+
+Skriv myFunction så den indsætter ovenstående stringe i p tag.
+  
+---------------------------------------------
+P14. I din html har følgende
+
+  <p>Click the button to set the background color of the document to blue.</p>
+  <button class="btn pbSetColor">Push Me</button>
+  <input type="text" class="getColor" />
+
+Skriv kode der sætter body background color til den farve der er indtastet i input felt, når der trykkes på knappen.
+
+---------------------------------------------
+P15. I din html har du følgende
+  <h1>Jeg er så klar til JavaScript1</h1>
+  <h1>Jeg er så klar til JavaScript2</h1>
+  <h1>Jeg er så klar til JavaScript3</h1>
+  <button class="btn pbSetH1Color">Gør H1 rød</button>
+
+Skriv kode der farver alle 3 h1 tags baggrundsfarve til rød.
+Når trykker på knappen.
+
+---------------------------------------------
+P16. Med samme html som i P15.
+
+Skriv en funktion der farver teksten i det første h1 tag rød.
+Når trykker på knappen.
+
+
+---------------------------------------------
+P17. Med samme html som i P16.
+
+Skriv en funktion der farver anden h1 tag blå, når escape tast bliver trykket.
+
+---------------------------------------------
+P18.
+
+var fruits = ["apple", "orange", "cherry", "strawberry"];
+
+Skriv en linje kode der udskriver ovenstående array til console.
+
+---------------------------------------------
+P19. I din html har du følgende
+
+<div class="box">
+  <select id="ddFruit"></select>
+</div>
+
+<button class="btn pbFillDropDown">Fill Drop Down</button>
+
+Skriv noget kode der indsætter elementer i drop down. 
+Tag elementer fra fruits array i P18.
+
+---------------------------------------------
+P20. Sæt en eventhandler på select 1 linje i drop down.
+
+Når en linje vælges i drop down, skal linjes index skrives ud i console.
+Dvs hvis apple vælges så skrives 0, hvis orange vælges så skrives 1 osv.
+
+---------------------------------------------
+P21. Tilføj en knap og noget kode som clear ovenstående drop down.
+
+---------------------------------------------
+
