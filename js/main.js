@@ -114,7 +114,11 @@ document.addEventListener('keydown', function (el){
 })
 
 //p18
+//Printer array
 console.log(fruits);
+//Printer elementer fra array
+fruits.forEach(f => console.log(f));
+
 
 //p19
 const pbFillDropDown = document.querySelector(".pbFillDropDown");
