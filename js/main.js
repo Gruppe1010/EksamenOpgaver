@@ -106,6 +106,28 @@ function redColour(el) {
   el.style.color = 'red';
 }
 
+document.addEventListener('keydown', function (el){
+  if (el.key === "Escape"){
+    h1s[1].style.color = 'blue';
+  }
+})
+
+console.log(fruits);
+
+const pbFillDropDown = document.querySelector(".pbFillDropDown");
+let ddFruit = document.getElementById("ddFruit");
+
+pbFillDropDown.addEventListener('click', function (){
+  for (let i = 0; i < fruits.length; i++) {
+   let option = document.createElement('option');
+   option.text = fruits[i];
+   ddFruit.add(option);
+  }
+})
+
+
+
+
 
 
 
