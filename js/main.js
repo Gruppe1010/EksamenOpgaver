@@ -87,7 +87,7 @@ button[0].addEventListener('click', function() {
 });
 */
 
-//p15
+//p15 og p16
 const pbSetH1Color = document.querySelector('.pbSetH1Color');
 const h1s = document.getElementsByTagName('h1');
 
@@ -106,17 +106,21 @@ function redColour(el) {
   el.style.color = 'red';
 }
 
+//p17
 document.addEventListener('keydown', function (el){
   if (el.key === "Escape"){
     h1s[1].style.color = 'blue';
   }
 })
 
+//p18
 console.log(fruits);
 
+//p19
 const pbFillDropDown = document.querySelector(".pbFillDropDown");
 let ddFruit = document.getElementById("ddFruit");
 
+//p20
 pbFillDropDown.addEventListener('click', function (){
   for (let i = 0; i < fruits.length; i++) {
    const option = document.createElement('option');
