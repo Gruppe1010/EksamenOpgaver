@@ -119,7 +119,7 @@ let ddFruit = document.getElementById("ddFruit");
 
 pbFillDropDown.addEventListener('click', function (){
   for (let i = 0; i < fruits.length; i++) {
-   let option = document.createElement('option');
+   const option = document.createElement('option');
    option.text = fruits[i];
    ddFruit.add(option);
   }
