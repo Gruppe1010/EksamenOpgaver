@@ -138,7 +138,8 @@ ddFruit.addEventListener('change', function (){
 });
 
 //p21
-const pbClearDropDown = document.getElementById("pbClearDropDown");
+/*
+const pbClearDropDown = document.getElementById("pbClearDropdown");
 pbClearDropDown.addEventListener('click', function (){
   let length = ddFruit.options.length;
   for (let i = length-1; i >= 0 ; i--) {
@@ -148,8 +149,16 @@ pbClearDropDown.addEventListener('click', function (){
 })
 
 
+ */
 
 
+const pbClearDropDown = document.getElementById("pbClearDropdown");
+
+pbClearDropDown.addEventListener('click', clearDropdown);
+
+function clearDropdown(){
+  ddFruit.innerText = "";
+}
 
 
 
