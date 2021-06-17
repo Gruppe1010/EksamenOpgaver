@@ -125,6 +125,20 @@ pbFillDropDown.addEventListener('click', function (){
   }
 })
 
+ddFruit.addEventListener('change', function (){
+  console.log(ddFruit.selectedIndex);
+});
+
+//p21
+const pbClearDropDown = document.getElementById("pbClearDropDown");
+pbClearDropDown.addEventListener('click', function (){
+  let length = ddFruit.options.length;
+  for (let i = length-1; i >= 0 ; i--) {
+    console.log(i)
+    ddFruit.remove(i);
+  }
+})
+
 
 
 
